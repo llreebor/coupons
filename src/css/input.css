@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+	body {
+		@apply relative font-roboto;
+	}
+
+	h2 {
+		@apply font-roboto-condensed text-[30px] font-bold leading-normal text-[#332d2f] xl:text-[40px];
+	}
+}
+
+@layer components {
+	/* Button */
+	.btn {
+		@apply flex max-w-fit justify-center rounded-sm bg-[#0cac74] p-5 text-center text-lg font-medium uppercase text-white shadow-[0_0_10px_rgba(0,0,0,.5)] transition-colors hover:bg-[#028d5c] hover:text-black;
+	}
+
+	/* Section Title */
+	.section-title {
+		@apply text-3xl;
+	}
+}
