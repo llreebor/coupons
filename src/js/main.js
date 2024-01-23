@@ -69,3 +69,26 @@ const slideToggle = (target, duration = 300) => {
 		return slideUp(target, duration)
 	}
 }
+
+const swiper = new Swiper('.swiper-partners', {
+	loop: true,
+	autoplay: {
+		delay: 2000,
+	},
+	breakpoints: {
+		// when window width is >= 320px
+		320: {
+			slidesPerView: 3,
+			spaceBetween: 20,
+		},
+		// when window width is >= 480px
+		480: {
+			slidesPerView: 3,
+			spaceBetween: 30,
+		},
+		// when window width is >= 640px
+		768: {
+			slidesPerView: 5,
+		},
+	},
+})

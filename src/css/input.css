@@ -15,7 +15,7 @@
 @layer components {
 	/* Button */
 	.btn {
-		@apply flex max-w-fit justify-center rounded-sm bg-[#0cac74] p-5 text-center text-lg font-medium uppercase text-white shadow-[0_0_10px_rgba(0,0,0,.5)] transition-colors hover:bg-[#028d5c] hover:text-black;
+		@apply flex max-w-fit justify-center rounded-sm bg-[#0cac74] p-5 text-center text-lg font-medium uppercase leading-none text-white shadow-[0_0_10px_rgba(0,0,0,.5)] transition-colors hover:bg-[#028d5c] hover:text-black;
 	}
 
 	/* Section Title */
