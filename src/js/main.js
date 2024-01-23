@@ -92,3 +92,68 @@ const swiper = new Swiper('.swiper-partners', {
 		},
 	},
 })
+
+const swiperTestimonials = new Swiper('.swiper-testimonails', {
+	// Optional parameters
+	loop: true,
+	spaceBetween: 40,
+	// If we need pagination
+	pagination: {
+		el: '.swiper-pagination',
+	},
+
+	// Navigation arrows
+	navigation: {
+		nextEl: '.swiper-button-next',
+		prevEl: '.swiper-button-prev',
+	},
+
+	breakpoints: {
+		// when window width is >= 320px
+		320: {
+			slidesPerView: 1,
+		},
+		992: {
+			slidesPerView: 3,
+		},
+	},
+})
+
+const swiperResults = new Swiper('.swiper-results', {
+	// Optional parameters
+	loop: true,
+	spaceBetween: 2,
+	// If we need pagination
+	pagination: {
+		el: '.swiper-pagination',
+	},
+
+	// Navigation arrows
+	navigation: {
+		nextEl: '.swiper-button-next',
+		prevEl: '.swiper-button-prev',
+	},
+
+	breakpoints: {
+		// when window width is >= 320px
+		320: {
+			slidesPerView: 1,
+		},
+		768: {
+			slidesPerView: 2,
+		},
+		992: {
+			slidesPerView: 3,
+		},
+	},
+})
+
+const swiperInfo = new Swiper('.swiper-info', {
+	// Optional parameters
+	loop: true,
+	// If we need pagination
+	pagination: {
+		el: '.swiper-pagination',
+	},
+	slidesPerView: 1,
+})

@@ -8,7 +8,7 @@
 	}
 
 	h2 {
-		@apply font-roboto-condensed text-[30px] font-bold leading-normal text-[#332d2f] xl:text-[40px];
+		@apply font-roboto-condensed text-[30px] font-bold leading-normal text-[#332d2f] lg:text-[40px];
 	}
 }
 
@@ -22,4 +22,13 @@
 	.section-title {
 		@apply text-3xl;
 	}
+}
+.swiper-button-next:after,
+.swiper-button-prev:after {
+	font-size: 26px;
+	color: #332d2f;
+	font-weight: bold;
+}
+.swiper-pagination-bullet.swiper-pagination-bullet-active {
+	background: #000;
 }

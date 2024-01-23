@@ -33,7 +33,7 @@
 
 			<!-- Main Content -->
 			<main class="relative flex-auto">
-				<!-- TODO: [JS] Mobile Timer -->
+				<!-- TODO: [JS] Make Timer -->
 				<section class="bg-primary md:hidden">
 					<div
 						class="mx-auto flex max-w-xl items-center justify-between gap-5 px-2"
@@ -291,11 +291,11 @@
 						<div
 							class="mx-5 mt-7 rounded border border-[#c7cfd3] bg-white py-5"
 						>
-							<p
-								class="mx-20 max-w-[406px] -translate-y-14 bg-[#e0222e] px-5 py-2 text-center font-roboto-condensed text-lg font-bold uppercase text-white"
+							<div
+								class="mx-auto max-w-[406px] -translate-y-14 bg-[#e0222e] px-5 py-2 text-center font-roboto-condensed text-lg font-bold uppercase text-white"
 							>
 								IHR RABATT LÄUFT AB IN:
-							</p>
+							</div>
 
 							<div class="mx-auto -mt-10 flex max-w-fit gap-1">
 								<div class="flex flex-col items-center">
@@ -350,7 +350,7 @@
 										Bestes Angebot:
 									</p>
 									<div class="flex items-center gap-[6px]">
-										<span class="text-[17px]">€29.99</span>
+										<span class="text-[17px]">€22.99</span>
 										<p class="text-primary">pro Stück</p>
 									</div>
 								</div>
@@ -360,7 +360,7 @@
 									</p>
 									<div class="flex items-center gap-[6px] bg-[#FFEE99]">
 										<span class="text-[17px] text-[#0CAC74] line-through">
-											€29.99
+											€21.99
 										</span>
 										<p class="text-primary">23% Rabatt</p>
 									</div>
@@ -457,6 +457,799 @@
 								<br />
 								24 Stunden eingelöst
 							</p>
+						</div>
+					</div>
+				</section>
+
+				<!-- TODO: Block Width -->
+				<section class="hidden py-[30px] md:block">
+					<div class="px-5">
+						<h2 class="text-center">Dein Rabatt läuft ab in:</h2>
+
+						<div class="mx-auto my-5 flex max-w-fit gap-1">
+							<div class="flex flex-col items-center">
+								<p class="text-[53px] font-normal leading-tight text-[#e0222e]">
+									00
+								</p>
+								<span class="text-xs uppercase leading-none text-primary">
+									DAYS
+								</span>
+							</div>
+							<div class="flex flex-col items-center">
+								<p class="text-[53px] font-normal leading-tight text-[#e0222e]">
+									:
+								</p>
+							</div>
+							<div class="flex flex-col items-center">
+								<p class="text-[53px] font-normal leading-tight text-[#e0222e]">
+									11
+								</p>
+								<span class="text-xs uppercase leading-none text-primary">
+									STUNDEN
+								</span>
+							</div>
+							<div class="flex flex-col items-center">
+								<p class="text-[53px] font-normal leading-tight text-[#e0222e]">
+									:
+								</p>
+							</div>
+							<div class="flex flex-col items-center">
+								<p class="text-[53px] font-normal leading-tight text-[#e0222e]">
+									34
+								</p>
+								<span class="text-xs uppercase leading-none text-primary">
+									MINUTEN
+								</span>
+							</div>
+							<div class="flex flex-col items-center">
+								<p class="text-[53px] font-normal leading-tight text-[#e0222e]">
+									:
+								</p>
+							</div>
+							<div class="flex flex-col items-center">
+								<p class="text-[53px] font-normal leading-tight text-[#e0222e]">
+									51
+								</p>
+								<span class="text-xs uppercase leading-none text-primary">
+									SECUNDEN
+								</span>
+							</div>
+						</div>
+
+						<p class="mt-7 text-center font-roboto-condensed text-primary">
+							<b>374 Gutscheine</b>
+							in den letzten
+							<br />
+							24 Stunden eingelöst
+						</p>
+
+						<div class="mt-7 grid grid-cols-2 items-center">
+							<div class="p-[10px]">
+								<div class="flex flex-col gap-3">
+									<div
+										class="flex items-center justify-between rounded-[5px] border border-[#b9b9b9] bg-[#f5f7f9] p-2"
+									>
+										<p
+											class="text-[22px] font-medium text-[#383838] lg:text-[27px]"
+										>
+											Regulärer Preis:
+										</p>
+										<div class="flex items-center gap-[6px]">
+											<span
+												class="text-[19px] text-[#e0222e] line-through lg:text-[22px]"
+											>
+												€29.99
+											</span>
+											<p class="text-[19px] text-primary lg:text-[22px]">
+												pro Stück
+											</p>
+										</div>
+									</div>
+									<div
+										class="flex items-center justify-between rounded-[5px] border border-[#b9b9b9] bg-[#e1e9ed] p-2"
+									>
+										<p
+											class="text-[22px] font-medium text-[#383838] lg:text-[27px]"
+										>
+											Bestes Angebot:
+										</p>
+										<div class="flex items-center gap-[6px]">
+											<span class="text-[19px] lg:text-[22px]">€22.99</span>
+											<p class="text-[19px] text-primary lg:text-[22px]">
+												pro Stück
+											</p>
+										</div>
+									</div>
+									<div
+										class="flex items-center justify-between rounded-[5px] border border-[#b9b9b9] bg-[#f5f7f9] p-2"
+									>
+										<p
+											class="text-[22px] font-medium text-[#383838] lg:text-[27px]"
+										>
+											Sie sparen bis zu:
+										</p>
+										<div class="flex items-center gap-[6px] bg-[#FFEE99]">
+											<span
+												class="text-[19px] text-[#0CAC74] line-through lg:text-[22px]"
+											>
+												€21.99
+											</span>
+											<p class="text-[19px] text-primary lg:text-[22px]">
+												23% Rabatt
+											</p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="flex items-center justify-center p-[10px]">
+								<img src="./img/Offer-Details.webp" alt="img" />
+							</div>
+						</div>
+
+						<div class="mx-auto mt-10 grid max-w-[960px] grid-cols-5">
+							<div class="flex flex-col items-center gap-2">
+								<img
+									class="w-[100px] lg:w-[120px]"
+									src="./img/plus-1.webp"
+									alt="img"
+								/>
+								<p class="text-text-primary text-center font-medium">
+									90 Tage Geld-
+									<br />
+									Zurück-Garantie
+								</p>
+							</div>
+							<div class="flex flex-col items-center gap-2">
+								<img
+									class="w-[100px] lg:w-[120px]"
+									src="./img/plus-2.webp"
+									alt="img"
+								/>
+								<p class="text-text-primary text-center font-medium">
+									Bestpreis
+									<br />
+									Garantie
+								</p>
+							</div>
+							<div class="flex flex-col items-center gap-2">
+								<img
+									class="w-[100px] lg:w-[120px]"
+									src="./img/plus-3.webp"
+									alt="img"
+								/>
+								<p class="text-text-primary text-center font-medium">
+									Kostenlose
+									<br />
+									Lieferung
+								</p>
+							</div>
+							<div class="flex flex-col items-center gap-2">
+								<img
+									class="w-[100px] lg:w-[120px]"
+									src="./img/plus-4.webp"
+									alt="img"
+								/>
+								<p class="text-text-primary text-center font-medium">
+									Kostenlose
+									<br />
+									Rücksendung
+								</p>
+							</div>
+							<div class="flex flex-col items-center gap-2">
+								<img
+									class="w-[100px] lg:w-[120px]"
+									src="./img/plus-5.webp"
+									alt="img"
+								/>
+								<p class="text-text-primary text-center font-medium">
+									Kauf auf Rechnung
+									<br />
+									möglich
+								</p>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<section class="bg-white py-[30px] md:bg-[#f5f7f9]">
+					<div class="flex flex-col gap-3 md:border-none xl:px-10 xl:py-5">
+						<div
+							class="hidden items-center justify-between py-[10px] px-5 md:flex md:justify-center md:gap-6 md:border-none md:py-0"
+						>
+							<div class="flex items-center gap-2">
+								<p class="text-[21px] font-medium text-[#faa540]">4.6</p>
+								<img
+									class="w-full max-w-[120px]"
+									src="./img/rating-gray.png"
+									alt="rating"
+								/>
+							</div>
+							<div>
+								<p class="text-text-primary font-light">40,850+ Bewertungen</p>
+							</div>
+						</div>
+
+						<div class="flex flex-col gap-3">
+							<h2 class="text-center">Top 3 Bewertungen</h2>
+							<p
+								class="text-text-primary text-center font-roboto-condensed text-lg"
+							>
+								von Kunden, die Rabatte von dieser Marke genutzt haben
+							</p>
+						</div>
+					</div>
+
+					<div class="mx-[30px] mt-5">
+						<!-- Slider main container -->
+						<div class="swiper swiper-testimonails max-w-[1100px] pb-12">
+							<!-- Additional required wrapper -->
+							<div class="swiper-wrapper">
+								<!-- Slides -->
+								<div class="swiper-slide h-auto">
+									<div class="h-full rounded-sm border border-[#c7cfd3]">
+										<div
+											class="border-b border-b-[#c7cfd3] bg-[#f2f2f2] px-[15px] pt-[15px] pb-[6px]"
+										>
+											<div class="flex gap-5">
+												<div
+													class="h-[42px] w-[42px] overflow-hidden rounded-full"
+												>
+													<img src="./img/avatar-1.webp" alt="img" />
+												</div>
+
+												<div class="flex flex-col gap-1">
+													<p class="text-sm font-medium text-[#1c2022]">
+														Bärbel - 62
+													</p>
+													<img
+														class="w-20"
+														src="./img/rating-slider.png"
+														alt="img"
+													/>
+													<p class="text-xs text-[#697882]">
+														<span class="text-[#0CAC74]">
+															Verifizierter Kauf
+														</span>
+														vom 03.02.2022
+													</p>
+												</div>
+											</div>
+										</div>
+										<div class="px-[15px] pt-[6px] pb-[15px]">
+											<p class="text-sm font-bold text-primary">
+												Meine Haut ist straffer und strahlt!
+											</p>
+											<p class="text-sm text-primary">
+												Bei solchen Angeboten (betrifft Falten) bin ich schon
+												oft enttäuscht worden. Aber finde bereits nach kürzester
+												Zeit konnte man der Haut anmerken, dass sie straffer und
+												strahlender ist und nicht mehr so fahl. Und auch meine
+												Haarwurzeln fühlen sich sehr gestärkt an und ich bin
+												gespannt wie es sich auswirkt, wenn ich das Glow25 noch
+												längere Zeit nehme.
+											</p>
+										</div>
+									</div>
+								</div>
+								<div class="swiper-slide h-auto">
+									<div class="h-full rounded-sm border border-[#c7cfd3]">
+										<div
+											class="border-b border-b-[#c7cfd3] bg-[#f2f2f2] px-[15px] pt-[15px] pb-[6px]"
+										>
+											<div class="flex gap-5">
+												<div
+													class="h-[42px] w-[42px] overflow-hidden rounded-full"
+												>
+													<img src="./img/avatar-2.webp" alt="img" />
+												</div>
+
+												<div class="flex flex-col gap-1">
+													<p class="text-sm font-medium text-[#1c2022]">
+														Monica - 51
+													</p>
+													<img
+														class="w-20"
+														src="./img/rating-slider.png"
+														alt="img"
+													/>
+													<p class="text-xs text-[#697882]">
+														<span class="text-[#0CAC74]">
+															Verifizierter Kauf
+														</span>
+														vom 19.05.2022
+													</p>
+												</div>
+											</div>
+										</div>
+										<div class="px-[15px] pt-[6px] pb-[15px]">
+											<p class="text-sm font-bold text-primary">
+												Löst sich perfekt auf!
+											</p>
+											<p class="text-sm text-primary">
+												Ich bestelle nur, wenn ich per Rechnung bezahlen kann!
+												Gut dass Glow25 das anbietet. So konnte ich euer
+												Kollagen probieren, bevor ich bezahle. Ich nehme mein
+												Glow25 Pulver am liebsten morgen direkt in meinen
+												Kaffee...das löst sich total super auf. Und dann startet
+												mein Tag gleich mit der extra Portion Kollagen. Es ist
+												super geschmacksneutral und man hat das Gefühl man tut
+												jetzt schon etwas gutes. Von mir ein klares "Ja" zu
+												Glow25.
+											</p>
+										</div>
+									</div>
+								</div>
+								<div class="swiper-slide h-auto">
+									<div class="rounded-sm border border-[#c7cfd3]">
+										<div
+											class="h-full border-b border-b-[#c7cfd3] bg-[#f2f2f2] px-[15px] pt-[15px] pb-[6px]"
+										>
+											<div class="flex gap-5">
+												<div
+													class="h-[42px] w-[42px] overflow-hidden rounded-full"
+												>
+													<img src="./img/avatar-1.webp" alt="img" />
+												</div>
+
+												<div class="flex flex-col gap-1">
+													<p class="text-sm font-medium text-[#1c2022]">
+														Katrin - 47
+													</p>
+													<img
+														class="w-20"
+														src="./img/rating-slider.png"
+														alt="img"
+													/>
+													<p class="text-xs text-[#697882]">
+														<span class="text-[#0CAC74]">
+															Verifizierter Kauf
+														</span>
+														vom 12.21.2021
+													</p>
+												</div>
+											</div>
+										</div>
+										<div class="px-[15px] pt-[6px] pb-[15px]">
+											<p class="text-sm font-bold text-primary">
+												Die Haut hat viel mehr Spannkraft
+											</p>
+											<p class="text-sm text-primary">
+												Ich war mir erst nicht sicher, ob es wirklich was bringt
+												oder nur ein Fake ist. Wie viele andere Sachen auch,
+												welche im Internet so angepriesen werden... Aber meine
+												Haut hat viel mehr Spannkraft, meine Fingernägel sind
+												viel fester...meiner Schwester und meiner Mutter habe
+												ich auch bereits eine Probepackung bestellt. Und auch
+												für mich habe ich 2 weitere Packungen nachbestellt...und
+												auch euch wünsche ich viel Erfolg damit!
+											</p>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<!-- If we need pagination -->
+							<div class="swiper-pagination"></div>
+							<!-- If we need navigation buttons -->
+							<div class="swiper-button-prev"></div>
+							<div class="swiper-button-next"></div>
+						</div>
+					</div>
+				</section>
+
+				<section class="bg-[#f5f7f9] py-5 md:bg-white md:py-10">
+					<div class="flex flex-col gap-3 md:border-none">
+						<div class="mx-auto flex flex-col gap-3">
+							<h2 class="text-center">Ergebnisse glücklicher Kundinnen</h2>
+							<p
+								class="text-text-primary mx-auto max-w-[435px] text-center font-roboto-condensed text-lg"
+							>
+								Diese Bilder wurden freiwillig von Kundinnen zur Verfügung
+								gestellt und sind von uns auf Echtheit überprüft worden
+							</p>
+						</div>
+					</div>
+
+					<div class="mx-3 mt-8">
+						<!-- Slider main container -->
+						<div class="swiper swiper-results max-w-[1100px] pb-12">
+							<!-- Additional required wrapper -->
+							<div class="swiper-wrapper">
+								<!-- Slides -->
+								<div
+									class="swiper-slide h-auto overflow-hidden rounded-md border border-[#c7cfd3]"
+								>
+									<img src="./img/result-1.webp" alt="img" />
+								</div>
+								<div
+									class="swiper-slide h-auto overflow-hidden rounded-md border border-[#c7cfd3]"
+								>
+									<img src="./img/result-2.webp" alt="img" />
+								</div>
+								<div
+									class="swiper-slide h-auto overflow-hidden rounded-md border border-[#c7cfd3]"
+								>
+									<img src="./img/result-3.webp" alt="img" />
+								</div>
+								<div
+									class="swiper-slide h-auto overflow-hidden rounded-md border border-[#c7cfd3]"
+								>
+									<img src="./img/result-4.webp" alt="img" />
+								</div>
+								<div
+									class="swiper-slide h-auto overflow-hidden rounded-md border border-[#c7cfd3]"
+								>
+									<img src="./img/result-5.webp" alt="img" />
+								</div>
+								<div
+									class="swiper-slide h-auto overflow-hidden rounded-md border border-[#c7cfd3]"
+								>
+									<img src="./img/result-6.webp" alt="img" />
+								</div>
+								<div
+									class="swiper-slide h-auto overflow-hidden rounded-md border border-[#c7cfd3]"
+								>
+									<img src="./img/result-7.webp" alt="img" />
+								</div>
+							</div>
+
+							<!-- If we need pagination -->
+							<div class="swiper-pagination"></div>
+						</div>
+					</div>
+				</section>
+
+				<section class="bg-white py-5 md:bg-[#f5f7f9] md:py-10">
+					<div
+						class="mx-auto hidden max-w-[1140px] grid-cols-2 items-center gap-10 px-5 md:grid"
+					>
+						<div>
+							<h2>Qualität und Vertrauen</h2>
+							<p class="mt-5 font-roboto-condensed text-lg">
+								Glow25 bietet nachgewiesene Kundenzufriedenheit. Sie können es
+								noch heute zu Hause 100% risikofrei testen mit der 90 tägigen
+								Geld-Zurück-Garantie.
+							</p>
+						</div>
+						<div>
+							<img src="./img/image-6.webp" alt="img" />
+						</div>
+					</div>
+
+					<div
+						class="mx-auto grid max-w-[1140px] grid-cols-1 items-center gap-10 px-5 md:mt-10 md:grid-cols-2 md:px-0"
+					>
+						<div>
+							<img src="./img/image-7.webp" alt="img" />
+						</div>
+						<div
+							class="mx-3 -mt-[140px] rounded-sm border border-[#c7cfd3] bg-white p-[15px] md:mt-0 md:border-none md:bg-transparent"
+						>
+							<h2 class="text-2xl lg:text-[40px]">
+								Die Vorteile von Glow25 Kollagen Pulver
+							</h2>
+							<p
+								class="mt-3 font-roboto-condensed text-base md:mt-5 md:text-lg"
+							>
+								Unsere Testberichte von Kunden, die Glow25 Kollagen in ihren
+								Morgenkaffee geben, zeigen beeindruckende Vorteile:
+							</p>
+
+							<ul class="mt-5 flex flex-col pl-4">
+								<li class="list-disc">
+									<p
+										class="text-sbase font-roboto-condensed text-primary md:text-lg"
+									>
+										<strong>Fältchen & feine Linien</strong>
+										werden reduziert
+									</p>
+								</li>
+								<li class="list-disc">
+									<p
+										class="font-roboto-condensed text-base text-primary md:text-lg"
+									>
+										<strong>Haut</strong>
+										strahlt (glow) und wird straffer & fester
+									</p>
+								</li>
+								<li class="list-disc">
+									<p
+										class="font-roboto-condensed text-base text-primary md:text-lg"
+									>
+										<strong>Nägel</strong>
+										werden fester
+									</p>
+								</li>
+								<li class="list-disc">
+									<p
+										class="text-sbas font-roboto-condensed text-primary md:text-lg"
+									>
+										<strong>Haare</strong>
+										werden voluminöser
+									</p>
+								</li>
+								<li class="list-disc">
+									<p
+										class="font-roboto-condensed text-base text-primary md:text-lg"
+									>
+										<strong>Schmerzende Gelenke</strong>
+										werden unterstützt
+									</p>
+								</li>
+							</ul>
+						</div>
+					</div>
+
+					<div class="mx-auto mt-10 max-w-[940px]">
+						<div class="mx-5">
+							<a class="btn max-w-full" href="#">JA! ICH WILL 23% SPAREN</a>
+						</div>
+					</div>
+				</section>
+
+				<section class="bg-[#f5f7f9] py-5 md:hidden">
+					<div class="mx-3 mt-8">
+						<!-- Slider main container -->
+						<div class="swiper swiper-info mx-auto max-w-[600px] pb-12">
+							<!-- Additional required wrapper -->
+							<div class="swiper-wrapper">
+								<!-- Slides -->
+								<div class="swiper-slide flex justify-center">
+									<img src="./img/slider-info-1.webp" alt="img" />
+								</div>
+								<div class="swiper-slide flex justify-center">
+									<img src="./img/slider-info-2.webp" alt="img" />
+								</div>
+								<div class="swiper-slide flex justify-center">
+									<img src="./img/slider-info-3.webp" alt="img" />
+								</div>
+								<div class="swiper-slide flex justify-center">
+									<img src="./img/slider-info-4.webp" alt="img" />
+								</div>
+								<div class="swiper-slide flex justify-center">
+									<img src="./img/slider-info-5.webp" alt="img" />
+								</div>
+								<div class="swiper-slide flex justify-center">
+									<img src="./img/slider-info-6.webp" alt="img" />
+								</div>
+								<div class="swiper-slide flex justify-center">
+									<img src="./img/slider-info-7.webp" alt="img" />
+								</div>
+								<div class="swiper-slide flex justify-center">
+									<img src="./img/slider-info-8.webp" alt="img" />
+								</div>
+							</div>
+
+							<!-- If we need pagination -->
+							<div class="swiper-pagination"></div>
+						</div>
+					</div>
+				</section>
+
+				<!-- TODO: Make animations & Bars width -->
+				<section class="bg-white py-5 md:py-10">
+					<div class="mx-auto max-w-[560px] px-5">
+						<div class="px-5">
+							<h2 class="text-center">
+								92% der Käufer empfehlen Glow25 Kollagen Pulver
+							</h2>
+							<p class="mt-5 text-center font-roboto-condensed text-lg">
+								In einer kürzlich durchgeführten Umfrage haben Käufer Glow25 in
+								6 Kategorien bewertet. Hier sind die Details:
+							</p>
+						</div>
+
+						<div class="mt-10 flex flex-col gap-5">
+							<div
+								class="relative z-10 w-full overflow-hidden rounded-full bg-[#eee] px-[10px] py-2"
+							>
+								<p class="leading-none text-white md:text-[23px]">
+									Sicherheit der Inhaltsstoffe: 9.8/10
+								</p>
+								<div
+									class="absolute left-0 top-0 -z-10 h-full w-[98%] bg-[#0ba36e]"
+								></div>
+							</div>
+
+							<div
+								class="relative z-10 w-full overflow-hidden rounded-full bg-[#eee] px-[10px] py-2"
+							>
+								<p class="leading-none text-white md:text-[23px]">
+									Wirksamkeit: 9.5/10
+								</p>
+								<div
+									class="absolute left-0 top-0 -z-10 h-full w-[95%] bg-[#0ba36e]"
+								></div>
+							</div>
+
+							<div
+								class="relative z-10 w-full overflow-hidden rounded-full bg-[#eee] px-[10px] py-2"
+							>
+								<p class="leading-none text-white md:text-[23px]">
+									Wert: 9.4/10
+								</p>
+								<div
+									class="absolute left-0 top-0 -z-10 h-full w-[94%] bg-[#0ba36e]"
+								></div>
+							</div>
+
+							<div
+								class="relative z-10 w-full overflow-hidden rounded-full bg-[#eee] px-[10px] py-2"
+							>
+								<p class="leading-none text-white md:text-[23px]">
+									Kundenzufriedenheit: 9.6/10
+								</p>
+								<div
+									class="absolute left-0 top-0 -z-10 h-full w-[96%] bg-[#0ba36e]"
+								></div>
+							</div>
+
+							<div
+								class="relative z-10 w-full overflow-hidden rounded-full bg-[#eee] px-[10px] py-2"
+							>
+								<p class="leading-none text-white md:text-[23px]">
+									Rückgabebedingungen: 9.8/10
+								</p>
+								<div
+									class="absolute left-0 top-0 -z-10 h-full w-[98%] bg-[#0ba36e]"
+								></div>
+							</div>
+
+							<div
+								class="relative z-10 w-full overflow-hidden rounded-full bg-[#eee] px-[10px] py-2"
+							>
+								<p class="leading-none text-white md:text-[23px]">
+									Kundenservice: 9.5/10
+								</p>
+								<div
+									class="absolute left-0 top-0 -z-10 h-full w-[95%] bg-[#0ba36e]"
+								></div>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<section class="bg-white py-5 md:bg-[#f5f7f9] md:py-10">
+					<div
+						class="mx-auto grid grid-cols-1 items-start gap-7 px-5 md:mx-5 md:mt-10 md:grid-cols-2 md:rounded-md md:border-2 md:border-[#c7cfd3] md:px-0 lg:mx-20"
+					>
+						<div class="flex justify-start">
+							<img
+								class="hidden w-full md:block"
+								src="./img/image-8.webp"
+								alt="img"
+							/>
+							<img
+								class="block w-full md:hidden"
+								src="./img/image-8-mob.webp"
+								alt="img"
+							/>
+						</div>
+						<div
+							class="mx-3 -mt-[140px] rounded-sm border border-[#c7cfd3] bg-white p-[15px] md:mt-0 md:border-none md:bg-transparent"
+						>
+							<div class="mt-14 hidden justify-center md:flex">
+								<img src="./img/icon-3.webp" alt="img" />
+							</div>
+							<h2 class="mt-5 text-center">
+								Verlängerte 90 Tage Geld Zurück Garantie
+							</h2>
+							<p
+								class="mt-3 font-roboto-condensed text-base md:mt-5 md:text-lg"
+							>
+								Wir empfehlen nur Produkte, die wir getestet haben und denen wir
+								vertrauen. Und dank direkter Beziehungen zu den Herstellern sind
+								wir in der Lage, Kunden, die dieses Angebot heute wahrnehmen,
+								eine erweiterte Garantie anzubieten.
+							</p>
+
+							<p
+								class="mt-3 hidden font-roboto-condensed text-base md:mt-5 md:block md:text-lg"
+							>
+								Wenn Sie Glow25 heute bei uns bestellen, können wir Ihre
+								Garantie von 60 auf 90 Tage verlängern.
+							</p>
+
+							<p
+								class="mt-3 hidden font-roboto-condensed text-base md:mt-5 md:block md:text-lg"
+							>
+								Das heißt, Sie haben noch mehr Zeit, das Produkt zu testen. Und
+								wenn Sie mit den Ergebnissen nicht 100%ig zufrieden sind, können
+								Sie eine vollständige Rückerstattung erhalten, indem Sie sich
+								direkt an Glow25 wenden:
+							</p>
+							<p
+								class="mt-3 hidden font-roboto-condensed text-base md:mt-5 md:block md:text-lg"
+							>
+								Geben Sie in der Betreffzeile unbedingt Ihre Bestellnummer und
+								„Die Besten Coupons“ an. Das Team wird ihnen dann die Bestellung
+								innerhalb von 1-2 Werktagen erstatten.
+							</p>
+
+							<a
+								class="mt-5 block font-bold text-[#116e96] underline md:hidden"
+								href="#"
+							>
+								Mehr lesen
+							</a>
+						</div>
+					</div>
+				</section>
+
+				<section class="bg-[#f5f7f9] py-5 md:py-0 md:pb-14">
+					<div
+						class="mx-3 flex flex-col rounded-md border border-[#c7cfd3] bg-white px-3 pb-3 md:border-none md:bg-transparent"
+					>
+						<h2 class="py-5 text-center">Auszeichnungen​</h2>
+
+						<div
+							class="mx-auto max-w-[1000px] md:grid md:grid-cols-3 md:gap-10"
+						>
+							<div
+								class="grid grid-cols-3 gap-3 bg-[#e4ebee] p-3 md:grid-cols-1 md:bg-transparent"
+							>
+								<div
+									class="col-span-1 md:flex md:items-center md:justify-center"
+								>
+									<img
+										class="md:max-w-[130px]"
+										src="./img/certificat-1.webp"
+										alt="img"
+									/>
+								</div>
+								<div class="col-span-2 mt-5 md:col-span-1">
+									<p class="text-sm text-primary md:text-center md:text-base">
+										Geprüfte Datenübertragung nach Banken-Standard mit 256-Bit
+										SSL-Verschlüsselung
+									</p>
+								</div>
+							</div>
+
+							<div
+								class="grid grid-cols-3 gap-3 bg-[#f5f7f] p-3 md:grid-cols-1 md:bg-transparent"
+							>
+								<div
+									class="col-span-1 md:flex md:items-center md:justify-center"
+								>
+									<img
+										class="md:max-w-[130px]"
+										src="./img/certificat-2.webp"
+										alt="img"
+									/>
+								</div>
+								<div class="col-span-2 mt-5 md:col-span-1">
+									<p class="text-sm text-primary md:text-center md:text-base">
+										Kontrollierte Produktqualität regelmäßig geprüft durch
+										Institut Kurz, Köln
+									</p>
+								</div>
+							</div>
+
+							<div
+								class="grid grid-cols-3 gap-3 bg-[#e4ebee] p-3 md:grid-cols-1 md:bg-transparent"
+							>
+								<div
+									class="col-span-1 md:flex md:items-center md:justify-center"
+								>
+									<img
+										class="md:max-w-[130px]"
+										src="./img/certificat-3.webp"
+										alt="img"
+									/>
+								</div>
+								<div class="col-span-2 mt-5 md:col-span-1">
+									<p class="text-sm text-primary md:text-center md:text-base">
+										Deutscher Lebensmittelpreis für besonders hoch-qualitative
+										Produkte
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="mx-auto mt-10 max-w-[940px]">
+						<div class="mx-5">
+							<a class="btn max-w-full" href="#">JA! ICH WILL 23% SPAREN</a>
 						</div>
 					</div>
 				</section>
