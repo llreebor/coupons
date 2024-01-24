@@ -157,3 +157,43 @@ const swiperInfo = new Swiper('.swiper-info', {
 	},
 	slidesPerView: 1,
 })
+
+// Accodrion
+function accordion() {
+	const items = document.querySelectorAll('.accordion-item')
+	const triggers = document.querySelectorAll('.accordion-trigger')
+	const contents = document.querySelectorAll('.accordion-content')
+
+	triggers.forEach((trigger, idx) => {
+		if (items[0].classList.contains('active')) {
+			slideDown(contents[0])
+		}
+		trigger.addEventListener('click', () => {
+			const parent = trigger.parentNode
+
+			if (!parent.classList.contains('active')) {
+				// If you want only one to be open at a time, and others to close - UNCOMMENT the code below.
+				// Если нужно что бы открывался ТОЛЬКО один, а остальные закрывались - РАСКОММЕНТИРУЙ код ниже
+
+				// items.forEach((item, i) => {
+				// 	if (i !== idx && item.classList.contains('active')) {
+				// 		slideUp(contents[i])
+				// 		item.classList.remove('active')
+				// 	}
+				// })
+
+				// Open the current accordion item
+				// Открыть текущий пункт аккордеона
+				parent.classList.add('active')
+				slideDown(contents[idx])
+			} else {
+				// Close the current accordion item
+				// Закрыть текущий пункт аккордеона
+				parent.classList.remove('active')
+				slideUp(contents[idx])
+			}
+		})
+	})
+}
+
+accordion()
