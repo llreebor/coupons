@@ -18,7 +18,7 @@
 		<link rel="stylesheet" href="./css/output.css" />
 	</head>
 
-	<body class="h-full dark:bg-slate-600 dark:text-white">
+	<body class="h-full">
 		<div class="wrapper flex min-h-full flex-col">
 			<!-- Header -->
 			<header class="py-3 shadow-lg">
@@ -33,7 +33,6 @@
 
 			<!-- Main Content -->
 			<main class="relative flex-auto">
-				<!-- TODO: [JS] Make Timer -->
 				<section class="sticky left-0 top-0 z-20 w-full bg-primary md:hidden">
 					<div
 						class="mx-auto flex max-w-xl items-center justify-between gap-5 px-2"
@@ -47,7 +46,7 @@
 						</div>
 						<div class="flex gap-1 py-2">
 							<div class="flex flex-col items-center">
-								<p class="days text-xl text-[#cf2e2e]">00</p>
+								<p id="timer-1-days" class="days text-xl text-[#cf2e2e]">00</p>
 								<span class="text-[11px] uppercase leading-none text-white">
 									TAGE
 								</span>
@@ -56,7 +55,9 @@
 								<p class="text-xl text-[#cf2e2e]">:</p>
 							</div>
 							<div class="flex flex-col items-center">
-								<p class="hours text-xl text-[#cf2e2e]">11</p>
+								<p id="timer-1-hours" class="hours text-xl text-[#cf2e2e]">
+									11
+								</p>
 								<span class="text-[11px] uppercase leading-none text-white">
 									STD.
 								</span>
@@ -65,7 +66,9 @@
 								<p class="text-xl text-[#cf2e2e]">:</p>
 							</div>
 							<div class="flex flex-col items-center">
-								<p class="minutes text-xl text-[#cf2e2e]">34</p>
+								<p id="timer-1-minutes" class="minutes text-xl text-[#cf2e2e]">
+									34
+								</p>
 								<span class="text-[11px] uppercase leading-none text-white">
 									MIN.
 								</span>
@@ -74,7 +77,9 @@
 								<p class="text-xl text-[#cf2e2e]">:</p>
 							</div>
 							<div class="flex flex-col items-center">
-								<p class="seconds text-xl text-[#cf2e2e]">51</p>
+								<p id="timer-1-seconds" class="seconds text-xl text-[#cf2e2e]">
+									51
+								</p>
 								<span class="text-[11px] uppercase leading-none text-white">
 									SEC.
 								</span>
@@ -299,7 +304,12 @@
 
 							<div class="mx-auto -mt-10 flex max-w-fit gap-1">
 								<div class="flex flex-col items-center">
-									<p class="days text-[30px] font-normal text-[#cf2e2e]">00</p>
+									<p
+										id="timer-2-days"
+										class="days text-[30px] font-normal text-[#cf2e2e]"
+									>
+										00
+									</p>
 									<span class="text-xs uppercase leading-none text-primary">
 										TAGE
 									</span>
@@ -308,7 +318,12 @@
 									<p class="text-[30px] font-normal text-[#cf2e2e]">:</p>
 								</div>
 								<div class="flex flex-col items-center">
-									<p class="hours text-[30px] font-normal text-[#cf2e2e]">11</p>
+									<p
+										id="timer-2-hours"
+										class="hours text-[30px] font-normal text-[#cf2e2e]"
+									>
+										11
+									</p>
 									<span class="text-xs uppercase leading-none text-primary">
 										STD.
 									</span>
@@ -317,7 +332,10 @@
 									<p class="text-[30px] font-normal text-[#cf2e2e]">:</p>
 								</div>
 								<div class="flex flex-col items-center">
-									<p class="minutes text-[30px] font-normal text-[#cf2e2e]">
+									<p
+										id="timer-2-minutes"
+										class="minutes text-[30px] font-normal text-[#cf2e2e]"
+									>
 										34
 									</p>
 									<span class="text-xs uppercase leading-none text-primary">
@@ -328,7 +346,10 @@
 									<p class="text-[30px] font-normal text-[#cf2e2e]">:</p>
 								</div>
 								<div class="flex flex-col items-center">
-									<p class="seconds text-[30px] font-normal text-[#cf2e2e]">
+									<p
+										id="timer-2-seconds"
+										class="seconds text-[30px] font-normal text-[#cf2e2e]"
+									>
 										51
 									</p>
 									<span class="text-xs uppercase leading-none text-primary">
@@ -471,7 +492,10 @@
 
 						<div class="mx-auto my-5 flex max-w-fit gap-1">
 							<div class="flex flex-col items-center">
-								<p class="text-[53px] font-normal leading-tight text-[#e0222e]">
+								<p
+									id="timer-3-days"
+									class="days text-[53px] font-normal leading-tight text-[#e0222e]"
+								>
 									00
 								</p>
 								<span class="text-xs uppercase leading-none text-primary">
@@ -484,7 +508,10 @@
 								</p>
 							</div>
 							<div class="flex flex-col items-center">
-								<p class="text-[53px] font-normal leading-tight text-[#e0222e]">
+								<p
+									id="timer-3-hours"
+									class="hours text-[53px] font-normal leading-tight text-[#e0222e]"
+								>
 									11
 								</p>
 								<span class="text-xs uppercase leading-none text-primary">
@@ -497,7 +524,10 @@
 								</p>
 							</div>
 							<div class="flex flex-col items-center">
-								<p class="text-[53px] font-normal leading-tight text-[#e0222e]">
+								<p
+									id="timer-3-minutes"
+									class="minutes text-[53px] font-normal leading-tight text-[#e0222e]"
+								>
 									34
 								</p>
 								<span class="text-xs uppercase leading-none text-primary">
@@ -510,7 +540,10 @@
 								</p>
 							</div>
 							<div class="flex flex-col items-center">
-								<p class="text-[53px] font-normal leading-tight text-[#e0222e]">
+								<p
+									id="timer-3-seconds"
+									class="seconds text-[53px] font-normal leading-tight text-[#e0222e]"
+								>
 									51
 								</p>
 								<span class="text-xs uppercase leading-none text-primary">
@@ -1967,7 +2000,8 @@
 							<input
 								class="rounded-sm border-none bg-white px-4 py-2 font-light text-primary placeholder:text-[#7A7A7A]/60"
 								placeholder="Ihre E-mail Adresse"
-								type="text"
+								type="email"
+								required
 							/>
 							<button
 								class="flex h-10 items-center justify-center rounded-sm bg-[#116e96] text-[15px] uppercase leading-none text-white"
@@ -2118,6 +2152,327 @@
 				</div>
 			</footer>
 		</div>
+
+		<!-- [START] HTML Modal -->
+		<div>
+			<div
+				id="modal"
+				class="fixed left-0 top-0 z-20 hidden h-screen w-full bg-gray-300/80 px-5 md:px-10"
+			>
+				<!-- Modal Content -->
+				<div
+					class="relative my-5 mx-auto w-full max-w-[350px] overflow-auto rounded-md border border-dashed border-[#a8b7bd] bg-white p-[10px] md:max-w-[600px]"
+				>
+					<h3 class="mt-3 px-4 text-center text-2xl font-medium text-primary">
+						Wählen Sie unten Ihr Angebot
+					</h3>
+
+					<div class="mt-5 mb-4 bg-[#FFED9E]">
+						<div class="flex items-center justify-center gap-3">
+							<img src="img/./timer-blue.svg" alt="timer-icon" />
+							<p
+								class="font-roboto-condensed font-medium italic text-[#54595F]"
+							>
+								Nur noch 1 Tage gültig!
+							</p>
+						</div>
+					</div>
+
+					<div class="grid gap-5">
+						<div
+							class="flex rounded-sm border border-[#c7cfd3] md:grid md:grid-cols-2"
+						>
+							<div class="w-[125px] shrink-0 md:w-full">
+								<p
+									class="bg-[#0cac74] py-[10px] text-center font-roboto-condensed uppercase leading-none text-white md:text-2xl"
+								>
+									BESTER WERT
+								</p>
+								<img
+									class="h-auto w-full max-w-full object-cover md:hidden"
+									src="./img/modal-1.webp"
+									alt="img"
+								/>
+								<img
+									class="hidden h-auto w-full max-w-full object-cover md:block"
+									src="./img/modal-1-mobile.webp"
+									alt="img"
+								/>
+							</div>
+							<div
+								class="flex w-full flex-col gap-1 pl-[10px] pt-[10px] pr-[10px] md:w-full md:gap-2"
+							>
+								<p class="text-xl font-semibold text-primary md:text-[30px]">
+									3 Monate Kur
+								</p>
+								<p class="text-sm text-[#7A7A7A] md:text-xl">
+									<s>€29,99</s>
+									<span class="text-lg font-bold text-[#e0222e] md:text-[26px]">
+										€22,99
+									</span>
+									<span class="text-[#332d2f]">/ Stück</span>
+								</p>
+								<p class="text-sm text-[#7A7A7A] md:text-xl">
+									<s>€89,97</s>
+									<span class="text-[#332d2f]">€68,97 Gesamt</span>
+								</p>
+
+								<p
+									class="max-w-fit bg-[#ffee99] font-bold leading-none text-primary md:text-[26px]"
+								>
+									Du sparst
+									<span class="text-[#0cac74]">€21,00</span>
+								</p>
+
+								<a
+									class="mt-1 flex w-full items-center justify-center gap-4 bg-[#0cac74] py-[10px] text-center font-roboto-condensed text-sm uppercase leading-none text-white shadow-[0_0_10px_rgba(0,0,0,.5)] md:text-base"
+									href="#"
+								>
+									<img
+										class="hidden md:block"
+										src="./img/lock.svg"
+										alt="lock"
+									/>
+									JETZT BESTELLEN
+								</a>
+							</div>
+						</div>
+
+						<div
+							class="flex rounded-sm border border-[#c7cfd3] md:grid md:grid-cols-2"
+						>
+							<div class="w-[125px] shrink-0 md:w-full">
+								<p
+									class="bg-primary py-[10px] text-center font-roboto-condensed uppercase leading-none text-white md:text-2xl"
+								>
+									SUPER RABATT
+								</p>
+								<img
+									class="h-auto w-full max-w-full object-cover"
+									src="./img/modal-2.webp"
+									alt="img"
+								/>
+							</div>
+							<div
+								class="flex w-full flex-col gap-1 pl-[10px] pt-[10px] pr-[10px] md:w-full md:gap-2"
+							>
+								<p class="text-xl font-semibold text-primary md:text-[30px]">
+									2 Monate Kur
+								</p>
+								<p class="text-sm text-[#7A7A7A] md:text-xl">
+									<s>€29,99</s>
+									<span class="text-lg font-bold text-[#e0222e] md:text-[26px]">
+										€24,99
+									</span>
+									<span class="text-[#332d2f]">/ Stück</span>
+								</p>
+								<p class="text-sm text-[#7A7A7A] md:text-xl">
+									<s>€59,98</s>
+									<span class="text-[#332d2f]">€49,98 Gesamt</span>
+								</p>
+
+								<p
+									class="max-w-fit bg-[#ffee99] font-bold leading-none text-primary md:text-[26px]"
+								>
+									Du sparst
+									<span class="text-[#0cac74]">€10,00</span>
+								</p>
+
+								<a
+									class="mt-1 flex w-full items-center justify-center gap-4 bg-primary py-[10px] text-center font-roboto-condensed text-sm uppercase leading-none text-white shadow-[0_0_10px_rgba(0,0,0,.5)] md:text-base"
+									href="#"
+								>
+									<img
+										class="hidden md:block"
+										src="./img/lock.svg"
+										alt="lock"
+									/>
+									JETZT BESTELLEN
+								</a>
+							</div>
+						</div>
+
+						<div
+							class="flex rounded-sm border border-[#c7cfd3] md:grid md:grid-cols-2"
+						>
+							<div class="w-[125px] shrink-0 md:w-full">
+								<p
+									class="bg-primary py-[10px] text-center font-roboto-condensed uppercase leading-none text-white md:text-2xl"
+								>
+									PROBEPREIS
+								</p>
+								<img
+									class="h-auto w-full max-w-full object-cover"
+									src="./img/modal-3.webp"
+									alt="img"
+								/>
+							</div>
+							<div
+								class="flex w-full flex-col gap-1 pl-[10px] pt-[10px] pr-[10px] md:w-full md:gap-2"
+							>
+								<p class="text-xl font-semibold text-primary md:text-[30px]">
+									Probierpackung
+								</p>
+								<p class="text-sm text-[#7A7A7A] md:text-xl">
+									<s>€29,99</s>
+									<span class="text-lg font-bold text-[#e0222e] md:text-[26px]">
+										€26,99
+									</span>
+									<span class="text-[#332d2f]">/ Stück</span>
+								</p>
+
+								<p
+									class="max-w-fit bg-[#ffee99] font-bold leading-none text-primary md:text-[26px]"
+								>
+									Du sparst
+									<span class="text-[#0cac74]">€3,00</span>
+								</p>
+
+								<a
+									class="mt-1 flex w-full items-center justify-center gap-4 bg-primary py-[10px] text-center font-roboto-condensed text-sm uppercase leading-none text-white shadow-[0_0_10px_rgba(0,0,0,.5)] md:text-base"
+									href="#"
+								>
+									<img
+										class="hidden md:block"
+										src="./img/lock.svg"
+										alt="lock"
+									/>
+									JETZT BESTELLEN
+								</a>
+							</div>
+						</div>
+					</div>
+
+					<ul class="mt-3 flex flex-col gap-3 p-[10px]">
+						<li class="flex items-center gap-2">
+							<div class="w-[50px] shrink-0 md:w-[25px]">
+								<img
+									class="w-full max-w-[35px]"
+									src="./img/icon-1.svg"
+									alt="img"
+								/>
+							</div>
+
+							<span class="text-[#54595F] md:text-xl">
+								Sicher & verschlüsselt
+							</span>
+						</li>
+						<li class="flex items-center gap-2">
+							<div class="w-[50px] shrink-0 md:w-[25px]">
+								<img
+									class="w-full max-w-[45px]"
+									src="./img/icon-2.svg"
+									alt="img"
+								/>
+							</div>
+							<span class="text-[#54595F] md:text-xl">
+								Kostenloser Versand mit DHL
+							</span>
+						</li>
+						<li class="flex items-center gap-2">
+							<div class="w-[50px] shrink-0 md:w-[25px]">
+								<img
+									class="w-full max-w-[40px]"
+									src="./img/icon-3.svg"
+									alt="img"
+								/>
+							</div>
+							<span class="text-[#54595F] md:text-xl">
+								Hergestellt in Deutschland
+							</span>
+						</li>
+						<li class="flex items-center gap-2">
+							<div class="w-[50px] shrink-0 md:w-[25px]">
+								<img
+									class="w-full max-w-[45px]"
+									src="./img/icon-4.svg"
+									alt="img"
+								/>
+							</div>
+							<span class="text-[#54595F] md:text-xl">
+								Kauf auf Rechnung möglich
+							</span>
+						</li>
+						<li class="flex items-center gap-2">
+							<div class="w-[50px] shrink-0 md:w-[25px]">
+								<img
+									class="w-full max-w-[45px]"
+									src="./img/icon-5.svg"
+									alt="img"
+								/>
+							</div>
+							<span class="text-[#54595F] md:text-xl">Bestpreis-Garantie</span>
+						</li>
+					</ul>
+
+					<div class="mt-5 border border-[#dde6ea]">
+						<p
+							class="bg-[#dde6ea] px-[10px] pt-[10px] pb-3 text-xl font-bold leading-none md:pb-[15px] md:text-[28px]"
+						>
+							Zahlungsmethoden
+						</p>
+
+						<div class="bg-[#f5f7f9] p-[10px]">
+							<img class="mt-2 block" src="./img/cards.png" alt="img" />
+
+							<ul class="mt-4 flex flex-col gap-1">
+								<li class="flex items-center gap-2 md:text-[22px]">
+									<img class="md:w-5" src="./img/modal-icon-1.svg" alt="icon" />
+									<p>
+										<b>Auf Rechnung</b>
+										(zahle erst in 30 Tagen)
+									</p>
+								</li>
+								<li class="flex items-center gap-2 md:text-[22px]">
+									<img class="md:w-5" src="./img/modal-icon-2.svg" alt="icon" />
+									<p>
+										<b>PayPal</b>
+									</p>
+								</li>
+								<li class="flex items-center gap-2 md:text-[22px]">
+									<img class="md:w-5" src="./img/modal-icon-3.svg" alt="icon" />
+									<p>
+										<b>Kredit- & Debitkarte</b>
+										(Visa, Mastercard)
+									</p>
+								</li>
+								<li class="flex items-center gap-2 md:text-[22px]">
+									<img class="md:w-5" src="./img/modal-icon-4.svg" alt="icon" />
+									<p>
+										<b>Sofortüberweisung</b>
+										(per Klarna)
+									</p>
+								</li>
+								<li class="flex items-center gap-2 md:text-[22px]">
+									<img class="md:w-5" src="./img/modal-icon-5.svg" alt="icon" />
+									<p>
+										<b>Ratenzahlung</b>
+										(bis zu 12 Raten)
+									</p>
+								</li>
+							</ul>
+						</div>
+					</div>
+
+					<!-- Close Btn -->
+					<button class="group">
+						<svg
+							id="close-btn"
+							class="absolute right-3 top-3 h-3 w-4"
+							viewBox="0 0 28 28"
+							fill="none"
+							xmlns="http://www.w3.org/2000/svg"
+						>
+							<path
+								class="fill-black transition-colors group-hover:fill-blue-400"
+								d="M17.3145 13.9999L26.5918 4.72257C27.0321 4.28305 27.2798 3.68662 27.2804 3.06449C27.2809 2.44236 27.0343 1.84549 26.5948 1.40519C26.1552 0.964888 25.5588 0.717221 24.9367 0.716672C24.3145 0.716122 23.7177 0.962735 23.2774 1.40226L14 10.6796L4.72269 1.40226C4.28239 0.961958 3.68522 0.7146 3.06254 0.7146C2.43986 0.7146 1.84268 0.961958 1.40238 1.40226C0.96208 1.84256 0.714722 2.43974 0.714722 3.06242C0.714722 3.68509 0.96208 4.28227 1.40238 4.72257L10.6797 13.9999L1.40238 23.2773C0.96208 23.7176 0.714722 24.3147 0.714722 24.9374C0.714722 25.5601 0.96208 26.1573 1.40238 26.5976C1.84268 27.0379 2.43986 27.2852 3.06254 27.2852C3.68522 27.2852 4.28239 27.0379 4.72269 26.5976L14 17.3202L23.2774 26.5976C23.7177 27.0379 24.3149 27.2852 24.9375 27.2852C25.5602 27.2852 26.1574 27.0379 26.5977 26.5976C27.038 26.1573 27.2854 25.5601 27.2854 24.9374C27.2854 24.3147 27.038 23.7176 26.5977 23.2773L17.3145 13.9999Z"
+							/>
+						</svg>
+					</button>
+				</div>
+			</div>
+		</div>
+		<!-- [END] HTML Modal -->
 
 		<!-- JS -->
 		<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>

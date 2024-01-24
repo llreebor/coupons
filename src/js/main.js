@@ -70,6 +70,7 @@ const slideToggle = (target, duration = 300) => {
 	}
 }
 
+// Sliders
 const swiper = new Swiper('.swiper-partners', {
 	loop: true,
 	autoplay: {
@@ -92,7 +93,6 @@ const swiper = new Swiper('.swiper-partners', {
 		},
 	},
 })
-
 const swiperTestimonials = new Swiper('.swiper-testimonails', {
 	// Optional parameters
 	loop: true,
@@ -118,7 +118,6 @@ const swiperTestimonials = new Swiper('.swiper-testimonails', {
 		},
 	},
 })
-
 const swiperResults = new Swiper('.swiper-results', {
 	// Optional parameters
 	loop: true,
@@ -147,7 +146,6 @@ const swiperResults = new Swiper('.swiper-results', {
 		},
 	},
 })
-
 const swiperInfo = new Swiper('.swiper-info', {
 	// Optional parameters
 	loop: true,
@@ -195,5 +193,35 @@ function accordion() {
 		})
 	})
 }
-
 accordion()
+
+// Modal
+function toggleModal() {
+	const buttons = document.querySelectorAll('.btn')
+	const modal = document.getElementById('modal')
+	const close = document.getElementById('close-btn')
+	const body = document.querySelector('body')
+
+	buttons.forEach((btn, idx) => {
+		btn.addEventListener('click', () => {
+			modal.classList.toggle('hidden')
+			modal.classList.toggle('flex')
+			body.classList.toggle('overflow-hidden')
+		})
+	})
+
+	modal.addEventListener('click', (e) => {
+		if (e.target === modal) {
+			modal.classList.toggle('hidden')
+			modal.classList.toggle('flex')
+			body.classList.toggle('overflow-hidden')
+		}
+	})
+
+	close.addEventListener('click', () => {
+		modal.classList.toggle('hidden')
+		modal.classList.toggle('flex')
+		body.classList.toggle('overflow-hidden')
+	})
+}
+toggleModal()
