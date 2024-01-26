@@ -104,8 +104,8 @@ const swiperTestimonials = new Swiper('.swiper-testimonails', {
 
 	// Navigation arrows
 	navigation: {
-		nextEl: '.swiper-button-next',
-		prevEl: '.swiper-button-prev',
+		nextEl: '.swiper-button-next-testimonails',
+		prevEl: '.swiper-button-prev-testimonails',
 	},
 
 	breakpoints: {
@@ -121,16 +121,13 @@ const swiperTestimonials = new Swiper('.swiper-testimonails', {
 const swiperResults = new Swiper('.swiper-results', {
 	// Optional parameters
 	loop: true,
+	autoplay: {
+		delay: 2000,
+	},
 	spaceBetween: 2,
 	// If we need pagination
 	pagination: {
 		el: '.swiper-pagination',
-	},
-
-	// Navigation arrows
-	navigation: {
-		nextEl: '.swiper-button-next',
-		prevEl: '.swiper-button-prev',
 	},
 
 	breakpoints: {
