@@ -773,6 +773,10 @@ h2 {
 
 /* Section Title */
 
+.pointer-events-none {
+  pointer-events: none;
+}
+
 .fixed {
   position: fixed;
 }
@@ -822,6 +826,10 @@ h2 {
 
 .z-20 {
   z-index: 20;
+}
+
+.z-0 {
+  z-index: 0;
 }
 
 .col-span-1 {
@@ -1000,6 +1008,10 @@ h2 {
   width: 1rem;
 }
 
+.w-6 {
+  width: 1.5rem;
+}
+
 .w-7 {
   width: 1.75rem;
 }
@@ -1046,18 +1058,6 @@ h2 {
 
 .w-full {
   width: 100%;
-}
-
-.w-10 {
-  width: 2.5rem;
-}
-
-.w-8 {
-  width: 2rem;
-}
-
-.w-6 {
-  width: 1.5rem;
 }
 
 .max-w-\[1000px\] {
@@ -2433,19 +2433,11 @@ h2 {
     justify-content: space-between;
   }
 
-  .\32xl\:pr-5 {
-    padding-right: 1.25rem;
-  }
-
-  .\32xl\:pr-3 {
-    padding-right: 0.75rem;
+  .\32xl\:pl-5 {
+    padding-left: 1.25rem;
   }
 
   .\32xl\:pr-2 {
     padding-right: 0.5rem;
-  }
-
-  .\32xl\:pl-5 {
-    padding-left: 1.25rem;
   }
 }
